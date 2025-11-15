@@ -57,7 +57,7 @@ attest:
    ```yaml
    - uses: actions/attest-build-provenance@v2
      with:
-       subject-path: '<PATH TO ARTIFACT>'
+       subject-path: "<PATH TO ARTIFACT>"
    ```
 
    The `subject-path` parameter should identify the artifact for which you want
@@ -157,7 +157,7 @@ jobs:
       - name: Attest
         uses: actions/attest-build-provenance@v2
         with:
-          subject-path: '${{ github.workspace }}/my-app'
+          subject-path: "${{ github.workspace }}/my-app"
 ```
 
 ### Identify Multiple Subjects
@@ -168,7 +168,7 @@ time by using a wildcard in the `subject-path` input.
 ```yaml
 - uses: actions/attest-build-provenance@v2
   with:
-    subject-path: 'dist/**/my-bin-*'
+    subject-path: "dist/**/my-bin-*"
 ```
 
 For supported wildcards along with behavior and documentation, see
@@ -180,7 +180,7 @@ newline delimited list:
 ```yaml
 - uses: actions/attest-build-provenance@v2
   with:
-    subject-path: 'dist/foo, dist/bar'
+    subject-path: "dist/foo, dist/bar"
 ```
 
 ```yaml
@@ -311,10 +311,8 @@ artifact directly into the `subject-digest` input of the attestation action.
 [3]: https://slsa.dev/spec/v1.0/provenance
 [4]: https://www.sigstore.dev/
 [5]: https://cli.github.com/manual/gh_attestation_verify
-[6]:
-  https://github.com/sigstore/protobuf-specs/blob/main/protos/sigstore_bundle.proto
+[6]: https://github.com/sigstore/protobuf-specs/blob/main/protos/sigstore_bundle.proto
 [8]: https://github.com/actions/toolkit/tree/main/packages/glob#patterns
-[9]:
-  https://docs.github.com/en/actions/security-guides/using-artifact-attestations-to-establish-provenance-for-builds
+[9]: https://docs.github.com/en/actions/security-guides/using-artifact-attestations-to-establish-provenance-for-builds
 [10]: https://github.com/sigstore/cosign/blob/main/specs/BUNDLE_SPEC.md
 [11]: https://github.com/actions/upload-artifact
