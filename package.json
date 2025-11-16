@@ -1,96 +1,1455 @@
 {
-  "name": "actions/attest-build-provenance",
-  "description": "Generate signed build provenance attestations",
-  "version": "1.1.5",
-  "author": "",
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://github.com/actions/attest-build-provenance",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/actions/attest-build-provenance.git"
-  },
-  "bugs": {
-    "url": "https://github.com/actions/attest-build-provenance/issues"
-  },
-  "keywords": [
-    "actions",
-    "attestation",
-    "provenance"
-  ],
-  "exports": {
-    ".": "./dist/index.js"
-  },
-  "engines": {
-    "node": ">=20"
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "scripts": {
-    "bundle": "npm run format:write && npm run package",
-    "ci-test": "jest",
-    "format:write": "prettier --write **/*.ts",
-    "format:check": "prettier --check **/*.ts",
-    "lint:eslint": "npx eslint . -c ./.github/linters/eslint.config.mjs",
-    "lint:markdown": "npx markdownlint --config .github/linters/.markdown-lint.yml \"*.md\"",
-    "lint": "npm run lint:eslint && npm run lint:markdown",
-    "package": "ncc build src/index.ts --license licenses.txt",
-    "package:watch": "npm run package -- --watch",
-    "test": "jest",
-    "all": "npm run format:write && npm run lint && npm run test && npm run package"
-  },
-  "license": "MIT",
-  "jest": {
-    "preset": "ts-jest",
-    "verbose": true,
-    "clearMocks": true,
-    "testEnvironment": "node",
-    "moduleFileExtensions": [
-      "js",
-      "ts"
-    ],
-    "setupFilesAfterEnv": [
-      "./jest.setup.js"
-    ],
-    "testMatch": [
-      "**/*.test.ts"
-    ],
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/dist/"
-    ],
-    "transform": {
-      "^.+\\.ts$": "ts-jest"
-    },
-    "coverageReporters": [
-      "json-summary",
-      "text",
-      "lcov"
-    ],
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "./src/**"
-    ]
-  },
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+{{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
   "dependencies": {
-    "@actions/attest": "^1.6.0",
-    "@actions/core": "^1.11.1",
-    "@reactive-dot/core": "^0.63.1",
-    "@reactive-dot/react": "^0.63.0",
-    "polkadot-api": "^1.20.5"
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "devDependencies": {
-    "@eslint/js": "^9.27.0",
-    "@types/jest": "^29.5.14",
-    "@types/node": "^22.15.19",
-    "@vercel/ncc": "^0.38.3",
-    "eslint": "^9.27.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jest": "^28.11.0",
-    "jest": "^25.0.0",
-    "jose": "^5.9.6",
-    "markdownlint-cli": "^0.45.0",
-    "nock": "^14.0.4",
-    "prettier": "^3.5.3",
-    "ts-jest": "^27.0.3",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.32.1"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "name": "actions/attest-build-provenance",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "description": "Generate signed build provenance attestations",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "version": "1.1.5",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "author": "",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "private": true,{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "homepage": "https://github.com/actions/attest-build-provenance",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "repository": {{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "type": "git",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "url": "git+https://github.com/actions/attest-build-provenance.git"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  },{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "bugs": {{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "url": "https://github.com/actions/attest-build-provenance/issues"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  },{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "keywords": [{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "actions",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "attestation",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "provenance"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  ],{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "exports": {{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    ".": "./dist/index.js"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  },{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "engines": {{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "node": ">=20"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  },{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "scripts": {{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "bundle": "npm run format:write && npm run package",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "ci-test": "jest",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "format:write": "prettier --write **/*.ts",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "format:check": "prettier --check **/*.ts",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "lint:eslint": "npx eslint . -c ./.github/linters/eslint.config.mjs",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "lint:markdown": "npx markdownlint --config .github/linters/.markdown-lint.yml \"*.md\"",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "lint": "npm run lint:eslint && npm run lint:markdown",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "package": "ncc build src/index.ts --license licenses.txt",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "package:watch": "npm run package -- --watch",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "test": "jest",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "all": "npm run format:write && npm run lint && npm run test && npm run package"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  },{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "license": "MIT",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "jest": {{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "preset": "ts-jest",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "verbose": true,{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "clearMocks": true,{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "testEnvironment": "node",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "moduleFileExtensions": [{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+      "js",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+      "ts"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    ],{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "setupFilesAfterEnv": [{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+      "./jest.setup.js"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    ],{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "testMatch": [{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+      "**/*.test.ts"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    ],{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "testPathIgnorePatterns": [{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+      "/node_modules/",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+      "/dist/"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    ],{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "transform": {{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+      "^.+\\.ts$": "ts-jest"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    },{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "coverageReporters": [{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+      "json-summary",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+      "text",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+      "lcov"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    ],{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "collectCoverage": true,{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "collectCoverageFrom": [{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+      "./src/**"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    ]{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  },{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "dependencies": {{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "@actions/attest": "^1.6.0",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "@actions/core": "^1.11.1",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "@reactive-dot/core": "^0.63.1",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "@reactive-dot/react": "^0.63.0",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "polkadot-api": "^1.20.5"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  },{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  "devDependencies": {{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "@eslint/js": "^9.27.0",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "@types/jest": "^29.5.14",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "@types/node": "^22.15.19",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "@vercel/ncc": "^0.38.3",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "eslint": "^9.27.0",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "eslint-plugin-import": "^2.31.0",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "eslint-plugin-jest": "^28.11.0",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "jest": "^25.0.0",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "jose": "^5.9.6",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "markdownlint-cli": "^0.45.0",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "nock": "^14.0.4",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "prettier": "^3.5.3",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "ts-jest": "^27.0.3",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "typescript": "^5.8.3",{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+    "typescript-eslint": "^8.32.1"{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+  }{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
+}{
+  "name": "reaktywnydot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@polkadot/api": "^11.0.0",
+    "@polkadot/extension-dapp": "^0.46.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   }
 }
